@@ -1,0 +1,42 @@
+<section class="group">
+<h2>Blog response status</h2>
+<br>
+{% if site.upptime_graph %}
+<div class="title-small-thumbnail">
+  <a href="{{site.upptime_history}}"><img alt="Response time graph" src="{{site.upptime_graph}}" width="120"></a>
+</div>
+{% endif %}
+{% if site.upptime_response %}
+<a href="{{site.upptime_history}}"><img alt="Response time {{site.upptime.time}}" src="{{site.upptime_img}}/response-time.json"></a><br>
+{% endif %}
+{% if site.upptime_response_day %}
+<a href="{{site.upptime_history}}"><img alt="24-hour Response time {{site.upptime.timeDay}}" src="{{site.upptime_img}}/response-time-day.json"></a><br>
+{% endif %}
+{% if site.upptime_response_week %}
+<a href="{{site.upptime_history}}"><img alt="7-day Response time {{site.upptime.timeWeek}}" src="{{site.upptime_img}}/response-time-week.json"></a><br>
+{% endif %}
+{% if site.upptime_response_month %}
+<a href="{{site.upptime_history}}"><img alt="30-day Response time {{site.upptime.timeMonth}}" src="{{site.upptime_img}}/response-time-month.json"></a><br>
+{% endif %}
+{% if site.upptime_response_year %}
+<a href="{{site.upptime_history}}"><img alt="1-year Response time {{site.upptime.timeYear}}" src="{{site.upptime_img}}/response-time-year.json"></a><br>
+{% endif %}
+{% if site.upptime_uptime %}
+<a href="{{site.upptime_history}}"><img alt="All-time uptime {{site.upptime.uptime}}" src="{{site.upptime_img}}/uptime.json"></a><br>
+{% endif %}
+{% if site.upptime_uptime_day %}
+<a href="{{site.upptime_history}}"><img alt="24-hour uptime {{site.upptime.uptimeDay}}" src="{{site.upptime_img}}/uptime-day.json"></a><br>
+{% endif %}
+{% if site.upptime_uptime_week %}
+<a href="{{site.upptime_history}}"><img alt="7-day uptime {{site.upptime.uptimeWeek}}" src="{{site.upptime_img}}/uptime-week.json"></a><br>
+{% endif %}
+{% if site.upptime_uptime_month %}
+<a href="{{site.upptime_history}}"><img alt="30-day uptime {{site.upptime.uptimeMonth}}" src="{{site.upptime_img}}/uptime-month.json"></a><br>
+{% endif %}
+{% if site.upptime_uptime_year %}
+<a href="{{site.upptime_history}}"><img alt="1-year uptime {{site.upptime.uptimeYear}}" src="{{site.upptime_img}}/uptime-year.json"></a><br>
+{% endif %}
+<br clear="left">
+Powered by <a href="//upptime.js.org/">Upptime</a>
+
+</section>
