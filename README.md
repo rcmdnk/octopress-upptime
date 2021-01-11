@@ -12,7 +12,7 @@ Prepare [Upptime](https://upptime.js.org/) monitoring repository for the site.
     * Copy **plugins/upptime.rb** to your **plugins** directory.
 * HTML:
     * Copy **source/_includes/custom/asides/upptime.html** to your **source/_includes/custom/asides/**.
-    * Or you can put HTML sources in **upptime.html** anywhere you like.
+    * Or you can put codes in **upptime.html** anywhere you like.
 
 ## Usage
 
