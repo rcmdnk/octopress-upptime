@@ -24,6 +24,9 @@ module Jekyll
           if not site.config["upptime_url"].start_with?("http")
             site.config["upptime_url"] = "#{site.config["url"].split(":")[0]}://#{site.config["upptime_url"]}"
           end
+          if not (site.config.key?("upptime_title"))
+            site.config["upptime_title"] = "Uptime monitor"
+          end
           site.config["upptime_history"] = "#{site.config["upptime_url"]}/history/#{site.config["upptime_name"]}"
           site.config["upptime_graph"] = "//github.com/#{site.config["upptime_repo"]}/raw/master/graphs/#{site.config["upptime_name"]}/response-time-week.png"
           site.config["upptime_img"] = "//img.shields.io/endpoint?url=https://raw.githubusercontent.com/#{site.config["upptime_repo"]}/master/api/#{site.config["upptime_name"]}"

@@ -20,6 +20,8 @@ Add following configurations in your **_config.yml**:
 
 
 ```
+# Aside block title
+upptime_title: Uptime monitor
 # Your site's name in your upptime.
 upptime_name: rcmdnk-blog
 # Your upptime's repository.
@@ -40,4 +42,14 @@ upptime_uptime_day: false
 upptime_uptime_week: true
 upptime_uptime_month: false
 upptime_uptime_year: true
+```
+
+Add **custom/asides/upptime.html** to `default_asides` in **_config.yml**
+
+
+```
+default_asides:
+  ...
+  - custom/asides/upptime.html
+  ...
 ```
