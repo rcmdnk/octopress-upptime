@@ -10,7 +10,7 @@ module Jekyll
 
     def generate(site)
       repo = (site.config.key?("upptime_repo")) ?  site.config["upptime_repo"] : ""
-      return if not repo
+      return if repo == ""
       url = "https://raw.githubusercontent.com/#{repo}/master/history/summary.json"
 
       begin
